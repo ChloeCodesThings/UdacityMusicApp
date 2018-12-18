@@ -1,0 +1,103 @@
+package com.example.macbookchlo.musicappudacity;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.content.Intent;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_main);
+
+        Button favorites;
+        favorites = findViewById(R.id.favorites);
+
+        favorites.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent favoritesIntent = new Intent(MainActivity.this, FavoritesActivity.class);
+
+                startActivity(favoritesIntent);
+            }
+        });
+
+        Button queens;
+        queens = findViewById(R.id.queens);
+
+        queens.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent queensIntent = new Intent(MainActivity.this, QueensActivity.class);
+
+                startActivity(queensIntent);
+            }
+        });
+
+        Button albums;
+        albums = findViewById(R.id.albums);
+
+        albums.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent albumsIntent = new Intent(MainActivity.this, AlbumsActivity.class);
+
+                startActivity(albumsIntent);
+            }
+        });
+
+        Button seasons;
+        seasons = findViewById(R.id.seasons);
+
+        seasons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent seasonsIntent = new Intent(MainActivity.this, SeasonsActivity.class);
+
+                startActivity(seasonsIntent);
+            }
+        });
+
+        Button podcasts;
+        podcasts = findViewById(R.id.podcasts);
+
+        podcasts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent podcastsIntent = new Intent(MainActivity.this, PodcastsActivity.class);
+
+                startActivity(podcastsIntent);
+            }
+        });
+
+        Button discover;
+        discover = findViewById(R.id.discover);
+
+        discover.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent discoverIntent = new Intent(MainActivity.this, DiscoverActivity.class);
+
+                startActivity(discoverIntent);
+            }
+        });
+
+        View nowplaying;
+        nowplaying = findViewById(R.id.nowplayingbar);
+
+        nowplaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent nowPlayingIntent = new Intent(MainActivity.this, NowPlayingActivity.class);
+
+                startActivity(nowPlayingIntent);
+            }
+        });
+    }
+}

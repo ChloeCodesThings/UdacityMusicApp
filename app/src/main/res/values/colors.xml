@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Background color for app-->
+    <color name="purple_background">#C556F2</color>
+
+    <!--Note that rearranging these will change the rainbow styling in app!-->
+    <color name="favorites_section">#FA1304</color>
+    <color name="queens_section">#FA8304</color>
+    <color name="albums_section">#E1CF1B</color>
+    <color name="seasons_section">#61FA04</color>
+    <color name="podcasts_section">#04CDFA</color>
+    <color name="discover_section">#7F04FA</color>
+
+
+    <color name="category_colors">#006400</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/judges_panel" />
+
+
+    <Button
+        android:id="@+id/favorites"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/PlaylistStyle"
+        android:background="@color/favorites_section"
+        android:text="@string/favorites_section"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/queens"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/PlaylistStyle"
+        android:background="@color/queens_section"
+        android:text="@string/queens_section"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/albums"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/PlaylistStyle"
+        android:background="@color/albums_section"
+        android:text="@string/albums_section"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/seasons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/PlaylistStyle"
+        android:background="@color/seasons_section"
+        android:text="@string/seasons_section"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/podcasts"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/PlaylistStyle"
+        android:background="@color/podcasts_section"
+        android:text="@string/podcasts_section"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/discover"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/PlaylistStyle"
+        android:background="@color/discover_section"
+        android:text="@string/discover_section"
+        android:textAlignment="center"/>
+
+
+        <RelativeLayout
+            android:id="@+id/nowplayingbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/album_art_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/album_art"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rupaul_xmas"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:id="@+id/nowplaying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pinkplayicon"
+                    android:padding="20dp"
+                    android:layout_gravity="center"
+                    style="@style/PlayButtonStyle" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/song_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THE SONG NAME"
+                android:layout_toRightOf="@id/album_art_container"
+                style="@style/NowPlayingStyle"/>
+
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THE ARTIST NAME"
+                android:layout_toRightOf="@id/album_art_container"
+                android:layout_below="@id/song_title"
+                style="@style/NowPlayingStyle"/>
+
+        </RelativeLayout>
+
+</LinearLayout>
