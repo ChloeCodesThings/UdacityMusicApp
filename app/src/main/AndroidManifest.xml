@@ -44,22 +44,6 @@
         </activity>
 
         <activity
-            android:name=".QueensActivity"
-            android:label="@string/queens_section">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
-        <activity
-            android:name=".SeasonsActivity"
-            android:label="@string/seasons_section">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
-        <activity
             android:name=".FavoritesActivity"
             android:label="@string/favorites_section">
             <meta-data

@@ -52,18 +52,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button seasons;
-        seasons = findViewById(R.id.seasons);
-
-        seasons.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent seasonsIntent = new Intent(MainActivity.this, SeasonsActivity.class);
-
-                startActivity(seasonsIntent);
-            }
-        });
-
         Button podcasts;
         podcasts = findViewById(R.id.podcasts);
 
@@ -85,6 +73,18 @@ public class MainActivity extends AppCompatActivity {
                 Intent discoverIntent = new Intent(MainActivity.this, DiscoverActivity.class);
 
                 startActivity(discoverIntent);
+            }
+        });
+
+        Button nowplaying;
+        nowplaying = findViewById(R.id.nowplaying);
+
+        nowplaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent nowplayingIntent = new Intent(MainActivity.this, NowPlayingActivity.class);
+
+                startActivity(nowplayingIntent);
             }
         });
 
