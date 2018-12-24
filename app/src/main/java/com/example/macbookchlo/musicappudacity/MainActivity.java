@@ -16,29 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        Button favorites;
-        favorites = findViewById(R.id.favorites);
-
-        favorites.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent favoritesIntent = new Intent(MainActivity.this, FavoritesActivity.class);
-
-                startActivity(favoritesIntent);
-            }
-        });
-
-        Button queens;
-        queens = findViewById(R.id.queens);
-
-        queens.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent queensIntent = new Intent(MainActivity.this, QueensActivity.class);
-
-                startActivity(queensIntent);
-            }
-        });
 
         Button albums;
         albums = findViewById(R.id.albums);
@@ -88,16 +65,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        View nowplaying;
-        nowplaying = findViewById(R.id.nowplayingbar);
-
-        nowplaying.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent nowPlayingIntent = new Intent(MainActivity.this, NowPlayingActivity.class);
-
-                startActivity(nowPlayingIntent);
-            }
-        });
+//        View nowplaying;
+//        nowplaying = findViewById(R.id.nowplayingbar);
+//
+//        nowplaying.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent nowPlayingIntent = new Intent(MainActivity.this, NowPlayingActivity.class);
+//
+//                startActivity(nowPlayingIntent);
+//            }
+//        });
     }
 }
