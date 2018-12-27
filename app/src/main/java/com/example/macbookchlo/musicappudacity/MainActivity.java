@@ -53,28 +53,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button nowplaying;
-        nowplaying = findViewById(R.id.nowplaying);
+        Button recommended;
+        discover = findViewById(R.id.recommended);
 
-        nowplaying.setOnClickListener(new View.OnClickListener() {
+        discover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nowplayingIntent = new Intent(MainActivity.this, NowPlayingActivity.class);
+                Intent recommendedIntent = new Intent(MainActivity.this, RecommendedActivity.class);
 
-                startActivity(nowplayingIntent);
+                startActivity(recommendedIntent);
             }
         });
 
-//        View nowplaying;
-//        nowplaying = findViewById(R.id.nowplayingbar);
-//
-//        nowplaying.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent nowPlayingIntent = new Intent(MainActivity.this, NowPlayingActivity.class);
-//
-//                startActivity(nowPlayingIntent);
-//            }
-//        });
     }
 }

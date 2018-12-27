@@ -8,7 +8,8 @@
     <color name="albums_section">#FA1304</color>
     <color name="podcasts_section">#FA8304</color>
     <color name="discover_section">#E1CF1B</color>
-    <color name="nowplaying_section">#61FA04</color>
+    <color name="recommended_section">#61FA04</color>
+
 
     <!--#04CDFA-->
     <!---->

@@ -45,62 +45,13 @@
         android:textAlignment="center"/>
 
     <Button
-        android:id="@+id/nowplaying"
+        android:id="@+id/recommended"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         style="@style/PlaylistStyle"
-        android:background="@color/nowplaying_section"
-        android:text="@string/nowplaying_section"
+        android:background="@color/recommended_section"
+        android:text="@string/recommended_section"
         android:textAlignment="center"/>
 
-
-        <!--<RelativeLayout-->
-            <!--android:id="@+id/nowplayingbar"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="vertical">-->
-
-            <!--<FrameLayout-->
-                <!--android:id="@+id/album_art_container"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content">-->
-                <!---->
-                <!--<ImageView-->
-                    <!--android:id="@+id/album_art"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:src="@drawable/rupaul_xmas"-->
-                    <!--android:adjustViewBounds="true"/>-->
-
-                <!--<ImageView-->
-                    <!--android:id="@+id/nowplaying"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:src="@drawable/pinkplayicon"-->
-                    <!--android:padding="20dp"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--style="@style/PlayButtonStyle" />-->
-
-            <!--</FrameLayout>-->
-
-
-            <!--<TextView-->
-                <!--android:id="@+id/song_title"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="THE SONG NAME"-->
-                <!--android:layout_toRightOf="@id/album_art_container"-->
-                <!--style="@style/NowPlayingStyle"/>-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/artist_name"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="THE ARTIST NAME"-->
-                <!--android:layout_toRightOf="@id/album_art_container"-->
-                <!--android:layout_below="@id/song_title"-->
-                <!--style="@style/NowPlayingStyle"/>-->
-
-        <!--</RelativeLayout>-->
 
 </LinearLayout>

@@ -19,14 +19,14 @@ public class PodcastsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_podcasts);
 
-        // Create an ArrayList of AndroidFlavor objects
+        // Create an ArrayList of Track objects
         final ArrayList<Track> tracks = new ArrayList<Track>();
-        tracks.add(new Track("What's the Tee?", "Rupaul + Michelle Visage", R.drawable.rubum));
-        tracks.add(new Track("What the Tuck?", "Nicole Byer + Joel Kim Booster", R.drawable.rubum));
-        tracks.add(new Track("Las Culturistas", "Matt Rodgers + Bowen Yang", R.drawable.rubum));
+        tracks.add(new Track("What's the Tee?", "Rupaul + Michelle Visage", R.drawable.tee));
+        tracks.add(new Track("What the Tuck?", "Nicole Byer + Joel Kim Booster", R.drawable.tuck));
+        tracks.add(new Track("Las Culturistas", "Matt Rodgers + Bowen Yang", R.drawable.culturistas));
 
-        // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
-        // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
+        // Create a TrackAdapter, whose data source is a list of
+        // TrackAdapters. The adapter knows how to create list item views for each item
         // in the list.
         TrackAdapter trackAdapter = new TrackAdapter(this, tracks);
 

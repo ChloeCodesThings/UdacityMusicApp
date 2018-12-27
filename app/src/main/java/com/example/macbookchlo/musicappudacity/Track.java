@@ -12,7 +12,7 @@ public class Track {
     private int mImageResourceId;
 
     /*
-     * Create a new AndroidFlavor object.
+     * Create a new TrackAdapter object.
      *
      * @param tTitle is the name of the Track
      * @param tArtist is the artist(s)
@@ -26,14 +26,14 @@ public class Track {
     }
 
     /**
-     * Get the name of the Android version
+     * Get the name of the title
      */
     public String getTitle() {
         return mTitle;
     }
 
     /**
-     * Get the Android version number
+     * Get the artist name
      */
     public String getArtist() {
         return mArtist;

@@ -1,26 +1,26 @@
 package com.example.macbookchlo.musicappudacity;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
+        import android.widget.AdapterView;
+        import android.widget.ListView;
 
-import java.util.ArrayList;
+        import java.util.ArrayList;
 
 
-public class AlbumsActivity extends AppCompatActivity {
+public class RecommendedActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_albums);
+        setContentView(R.layout.activity_recommended);
 
         // Create an ArrayList of track objects
         final ArrayList<Track> tracks = new ArrayList<Track>();
-        tracks.add(new Track("Realness", "Rupaul", R.drawable.realness2));
-        tracks.add(new Track("Born Naked", "Rupaul", R.drawable.born));
-        tracks.add(new Track("Christmas Party", "Rupaul", R.drawable.rupaul_xmas));
+        tracks.add(new Track("Kiki & Herb Will Die for You", "Kiki & Herb", R.drawable.kikiherb));
+        tracks.add(new Track("Under the Covers", "Courtney Act", R.drawable.under));
+        tracks.add(new Track("Your Makeup Is Terrible", "Alaska", R.drawable.makeup));
 
         // Create a TrackAdapter, whose data source is a list of
         // TrackAdapters. The adapter knows how to create list item views for each item
@@ -37,7 +37,7 @@ public class AlbumsActivity extends AppCompatActivity {
 
                 Track track = tracks.get(position);
 
-                NowPlayingActivity.startNowPlaying(AlbumsActivity.this,
+                NowPlayingActivity.startNowPlaying(RecommendedActivity.this,
                         track.getTitle(), track.getArtist(), track.getImageResourceId());
             }
         });

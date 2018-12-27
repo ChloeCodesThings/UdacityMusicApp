@@ -16,6 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/track_name"
+        android:background="@color/colorAccent"
+        style="@style/PlaylistStyle"
         android:gravity="center"/>
 
     <ImageView
@@ -28,6 +30,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/artist_name"
+        android:background="@color/colorAccent"
+        style="@style/PlaylistStyle"
+
         android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pinkplayicon"/>
 
 </LinearLayout>
