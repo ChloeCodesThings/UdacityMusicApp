@@ -16,7 +16,7 @@ public class AlbumsActivity extends AppCompatActivity {
 
         // Create an ArrayList of AndroidFlavor objects
         ArrayList<Track> tracks = new ArrayList<Track>();
-        tracks.add(new Track("Realness", "Rupaul", R.drawable.rubum));
+        tracks.add(new Track("Realness", "Rupaul", R.drawable.realness));
         tracks.add(new Track("Born Naked", "Rupaul", R.drawable.rubum));
         tracks.add(new Track("Christmas Party", "Rupaul", R.drawable.rupaul_xmas));
 

@@ -26,7 +26,7 @@ public class DiscoverActivity extends AppCompatActivity {
         TrackAdapter trackAdapter = new TrackAdapter(this, tracks);
 
         // Get a reference to the ListView, and attach the adapter to the listView.
-        ListView listView = (ListView) findViewById(R.id.tracklist);
+        ListView listView = findViewById(R.id.tracklist);
         listView.setAdapter(trackAdapter);
     }
 }
