@@ -1,13 +1,7 @@
 <resources>
     <string name="app_name">Dragify! Like Spotify... for Drag!</string>
 
-    <string name="favorites_section">My Favorites</string>
-
-    <string name="queens_section">Queens</string>
-
     <string name="albums_section">Albums</string>
-
-    <string name="seasons_section">Seasons</string>
 
     <string name="podcasts_section">Podcasts</string>
 
